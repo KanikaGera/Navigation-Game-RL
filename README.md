@@ -74,6 +74,6 @@ python -m ipykernel install --user --name drl --display-name "drl"
 	2.`Navigation-DDQN-Test.ipynb` is to test trained agent .
 	3. `model_3.pt` is saved trained model with weights.
 	
-# BEST MODEL - SUBMISSION
+## BEST MODEL - SUBMISSION
 The best average reward over 100 episodes when training mode is off , was achieved by  DDQN Algorithm. It should be considered
-as solution to Project 1: Navigation Submission. Hence Open Folder Double DQN Folder for evaluation.
+as solution to Project 1: Navigation Submission. Hence Open Folder Double DQN Folder for evaluation. Report is uploaded in main folder.
