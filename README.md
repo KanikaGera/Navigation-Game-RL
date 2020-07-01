@@ -73,7 +73,11 @@ python -m ipykernel install --user --name drl --display-name "drl"
 	1.`Navigation-DDQN.ipynb`  consist of unityagent ml library to interact with unity environment and train the agent.
 	2.`Navigation-DDQN-Test.ipynb` is to test trained agent .
 	3. `model_3.pt` is saved trained model with weights.
+
+`Video` A video of the agent collecting yellow bananas for a episode is uploaded in this folder.
 	
 ## BEST MODEL - SUBMISSION
 The best average reward over 100 episodes when training mode is off , was achieved by  DDQN Algorithm. It should be considered
 as solution to Project 1: Navigation Submission. Hence Open Folder Double DQN Folder for evaluation. Report is uploaded in main folder.
+
+
