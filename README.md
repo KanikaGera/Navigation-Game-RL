@@ -45,37 +45,61 @@ python -m ipykernel install --user --name drl --display-name "drl"
 
 5. Before running code in a notebook, change the kernel to match the `drl` environment by using the drop-down `Kernel` menu. 
 
-### Instructions
-
-1. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
-    - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
-    - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
-    
-    (_For Windows users_) Check out [this link](https://support.microsoft.com/en-us/help/827218/how-to-determine-whether-a-computer-is-running-a-32-bit-version-or-64) if you need help with determining if your computer is running a 32-bit version or 64-bit version of the Windows operating system.
-
-2. Place the file in the downloaded GitHub repository, in the main repository folder, and unzip (or decompress) the file. 
-
 ### Structure of Repository
 
 `DQN` Folder consist of Deep Q Network Implementation . It has four files:
+
 	1.`Navigation.ipynb`  consist of unityagent ml library to interact with unity environment and train the agent.
+	
 	2.`model.py` consists of structure of RL model coded in pytorch.
+	
 	3.`dqnagent.py` consist of DQN Algorithm Implementation 
+	
 	4. `model.pt`  is saved trained model with weights.
 
 `Duel_DQN` Folder consist of Duel Deep Q Network Implementation. It has four files
+
 	1.`Navigation-Duel DQN.ipynb`  consist of unityagent ml library to interact with unity environment and train the agent.
+	
 	2.`duel_model.py` consists of structure of RL model coded in pytorch.
+	
 	3.`duel_dqn_agent.py` consist of Duel-DQN Algorithm Implementation 
+	
 	4. `model_1.pt` is saved trained model with weights.
 
 `Double DQN` Folder consist of Duel Deep Q Network Implementation. It has three files
+
 	1.`Navigation-DDQN.ipynb`  consist of unityagent ml library to interact with unity environment and train the agent.
+	
 	2.`Navigation-DDQN-Test.ipynb` is to test trained agent .
+	
 	3. `model_3.pt` is saved trained model with weights.
 
 `Video` A video of the agent collecting yellow bananas for a episode is uploaded in this folder.
+
+### Instructions
+1. Install Dependies by following commands in __Getting Started__
 	
+2. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
+
+   - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
+   - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
+    
+    (_For Windows users_) Check out [this link](https://support.microsoft.com/en-us/help/827218/how-to-determine-whether-a-computer-is-running-a-32-bit-version-or-64) if you need help with determining if your computer is running a 32-bit version or 64-bit version of the Windows operating system.
+
+3. Place the file in the downloaded GitHub repository, in the main repository folder, and unzip (or decompress) the file. 
+
+4. Open the Folder according to the algorithm you want to run. Should open __Double DQN__ if you want to train the best agent only. 
+
+#### Train The Agent
+5. Open Navigation-[Model_Name].ipynb 
+6. Run Jupyter Notebook 
+7. Run the cells to train the model.
+
+#### Test the Agent
+8. In case of Double DQN , run cells of  `Navigation-DDQN-Test.ipynb`.
+9. For other algoruhms, run the  last Cell of `Navigation-[Model_Name].ipynb` notebook  to calculate the average reward over 100 episodes.
+
 ## BEST MODEL - SUBMISSION
 The best average reward over 100 episodes when training mode is off , was achieved by  DDQN Algorithm. It should be considered
 as solution to Project 1: Navigation Submission. Hence Open Folder Double DQN Folder for evaluation. Report is uploaded in main folder.
